@@ -1,22 +1,22 @@
-using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class GachaSystem : MonoBehaviour
 {
-    [SerializeField] TMP_InputField metalInputField;
-    [SerializeField] TMP_InputField bronzeInputField;
-    [SerializeField] TMP_InputField silverInputField;
-    [SerializeField] TMP_InputField goldInputField;
-    [SerializeField] TMP_InputField diamondInputField;
+    [SerializeField] InputField metalInputField;
+    [SerializeField] InputField bronzeInputField;
+    [SerializeField] InputField silverInputField;
+    [SerializeField] InputField goldInputField;
+    [SerializeField] InputField diamondInputField;
     int[] ReadInputs()
     {
         return new int[]
         {
-            ParseInput(metalInputField),
-            ParseInput(bronzeInputField),
-            ParseInput(silverInputField),
-            ParseInput(goldInputField),
-            ParseInput(diamondInputField)
+            ParseInput(metalInputField.text),
+            ParseInput(bronzeInputField.text),
+            ParseInput(silverInputField.text),
+            ParseInput(goldInputField.text),
+            ParseInput(diamondInputField.text)
         };
     }
     Rarity Roll(int[] inputs)
@@ -42,9 +42,9 @@ public class GachaSystem : MonoBehaviour
         return Rarity.Metal; // Default case, should not reach here
     }
 
-    private int ParseInput(TMP_InputField field)
+    private int ParseInput(string text)
     {
-        int.TryParse(field.text, out int input);
+        int.TryParse(text, out int input);
         return Mathf.Max(0, input);
     }
 }
