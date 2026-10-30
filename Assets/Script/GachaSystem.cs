@@ -1,25 +1,8 @@
-using UnityEngine.UI;
 using UnityEngine;
-
-public class GachaSystem : MonoBehaviour
+public class GachaSystem
 {
-    [SerializeField] InputField metalInputField;
-    [SerializeField] InputField bronzeInputField;
-    [SerializeField] InputField silverInputField;
-    [SerializeField] InputField goldInputField;
-    [SerializeField] InputField diamondInputField;
-    int[] ReadInputs()
-    {
-        return new int[]
-        {
-            ParseInput(metalInputField.text),
-            ParseInput(bronzeInputField.text),
-            ParseInput(silverInputField.text),
-            ParseInput(goldInputField.text),
-            ParseInput(diamondInputField.text)
-        };
-    }
-    Rarity Roll(int[] inputs)
+    
+    public Rarity Roll(int[] inputs)
     {
        int total = 0;
         foreach (int weight in inputs)
@@ -40,11 +23,5 @@ public class GachaSystem : MonoBehaviour
         }
 
         return Rarity.Metal; // Default case, should not reach here
-    }
-
-    private int ParseInput(string text)
-    {
-        int.TryParse(text, out int input);
-        return Mathf.Max(0, input);
     }
 }
