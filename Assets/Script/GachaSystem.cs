@@ -22,6 +22,6 @@ public class GachaSystem
             }
         }
 
-        return Rarity.Metal; // Default case, should not reach here
+        return Rarity.Metal;
     }
 }

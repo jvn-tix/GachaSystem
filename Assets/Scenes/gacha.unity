@@ -119,6 +119,33 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &10594181 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8423656620094139253, guid: 729ed0b023be8f04daeb15c6385fe835, type: 3}
+  m_PrefabInstance: {fileID: 755390656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &54445568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6785707990633864126, guid: 729ed0b023be8f04daeb15c6385fe835, type: 3}
+  m_PrefabInstance: {fileID: 755390656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &295065466 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7288374686035647133, guid: 729ed0b023be8f04daeb15c6385fe835, type: 3}
+  m_PrefabInstance: {fileID: 755390656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &755390656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -329,6 +356,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7288374686035647133, guid: 729ed0b023be8f04daeb15c6385fe835, type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7288374686035647133, guid: 729ed0b023be8f04daeb15c6385fe835, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8017749355454979942, guid: 729ed0b023be8f04daeb15c6385fe835, type: 3}
@@ -548,6 +579,16 @@ MonoBehaviour:
   silverInputField: {fileID: 755390659}
   goldInputField: {fileID: 755390658}
   diamondInputField: {fileID: 755390657}
+  storageContent: {fileID: 295065466}
+  storageItem: {fileID: 4386287336051913661, guid: 64892c605420dda46b90573ae538984a, type: 3}
+  raritySprites:
+  - {fileID: 21300000, guid: 039c7f1828ada4848815aa17edb44670, type: 3}
+  - {fileID: 21300000, guid: cf383450898b2b44f922645dbbcf3427, type: 3}
+  - {fileID: 21300000, guid: f20d12412f874c846803fdc379b408f5, type: 3}
+  - {fileID: 21300000, guid: fe7a6637c623a464d9ac4b1c90daafae, type: 3}
+  - {fileID: 21300000, guid: 665b51c52ac98da4aaf5d224001d7268, type: 3}
+  coinText: {fileID: 54445568}
+  storageValueText: {fileID: 10594181}
 --- !u!1 &1521493110
 GameObject:
   m_ObjectHideFlags: 0
